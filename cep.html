@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP-buscar</title>
+    <link rel="stylesheet" href="cep.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <a href="index.html">Voltar</a>
+    <h1>API-CEP</h1>
+    <fieldset>
+        <legend>Busque o endereço com o CEP</legend>
+
+        <div>
+        <p id="resultado"></p>
+        <label for="cep">CEP:</label><br>
+        <input type="text" id="cep" autocomplete="off">
+        <br>
+        <label for="rua">Rua:</label><br>
+        <input type="text" id="rua" readonly>
+        <br>
+        <label for="numero">Número:</label><br>
+        <input type="text" id="numero">
+        <br>
+        <label for="bairro">Bairro</label><br>
+        <input type="text" id="bairro" readonly>
+        <br>
+        <label for="cidade">Cidade:</label><br>
+        <input type="text" id="cidade" readonly>
+        <br>
+        <label for="estado">Estado:</label><br>
+        <input type="text" id="estado" readonly>
+        <br><br>
+        <button onclick="enviar()">Buscar CEP</button>
+        </div>
+        <script src="cep.js"></script>
+</body>
+
+</html>

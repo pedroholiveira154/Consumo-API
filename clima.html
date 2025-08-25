@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo</title>
+    <link rel="stylesheet" href="clima.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <a href="index.html">Voltar</a>
+    <center>
+        <h1>Previsão do Tempo</h1>
+        <p>Digite o nome da cidade</p>
+        <input type="text" id="city" autocomplete="off">
+        <button onclick="getWeather()">Pesquisar</button>
+        <p id="temperatura">Aguardando....</p>
+
+        <img src="img/output-onlinegiftools.gif" alt="">
+    </center>
+    <script src="clima.js"></script>
+</body>
+</html>
